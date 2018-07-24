@@ -1,0 +1,4 @@
+{
+    "aTestString": "This is a test string!",
+    "formatThing": "I formatted this {thing}."
+}

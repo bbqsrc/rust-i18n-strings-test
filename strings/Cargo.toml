@@ -1,0 +1,16 @@
+[package]
+name = "strings"
+version = "0.1.0"
+authors = ["Brendan Molloy <brendan@bbqsrc.net>"]
+
+[dependencies]
+strfmt = "^0.1"
+maplit = "^1.0.1"
+strings_codegen = { path = "../strings_codegen" }
+
+[build-dependencies]
+strings_codegen = { path = "../strings_codegen" }
+
+[profile.release]
+lto = true
+panic = 'abort'
